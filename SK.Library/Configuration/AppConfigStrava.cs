@@ -5,9 +5,9 @@ using System.Configuration;
 using System.Threading.Tasks;
 using RestSharp.Portable.OAuth2.Configuration;
 
-namespace SK.Library.Constants
+namespace SK.Library.Configuration
 {
-	public static class AppConfigStravaConstants
+	public static class AppConfigStrava
 	{
 		#region Strava Tokens
 

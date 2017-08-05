@@ -15,6 +15,7 @@ namespace StravaKing.Authentication
 {
 	public class Authenticator : RestSharp.Portable.OAuth2.OAuth2Authenticator
 	{
+		#region
 		/// <summary>
 		/// The access token that was received from the server.
 		/// </summary>
@@ -45,18 +46,17 @@ namespace StravaKing.Authentication
 
 		public async Task<bool> OnPageLoaded(Uri uri)
 		{
-			if (uri.AbsoluteUri.StartsWith(Client.Configuration.RedirectUri))
-			{
-				Debug.WriteLine("Navigated to redirect url.");
-				var parameters = uri.Query.Remove(0, 1).ParseQueryString(); // query portion of the response
-				await Client.GetUserInfo(parameters);
 
-				if (!string.IsNullOrEmpty(Client.AccessToken))
-				{
-					AccessToken = Client.AccessToken;
-					return true;
-				}
+			Debug.WriteLine("Navigated to redirect url.");
+			var parameters = uri.Query.Remove(0, 1).ParseQueryString(); // query portion of the response
+			await Client.GetUserInfo(parameters);
+
+			if (!string.IsNullOrEmpty(Client.AccessToken))
+			{
+				AccessToken = Client.AccessToken;
+				return true;
 			}
+
 
 			return false;
 		}
@@ -80,5 +80,6 @@ namespace StravaKing.Authentication
 		{
 			throw new NotImplementedException();
 		}
+		#endregion
 	}
 }

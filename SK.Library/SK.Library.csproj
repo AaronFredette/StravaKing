@@ -70,7 +70,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants\AppConfigStravaConstants.cs" />
+    <Compile Include="Configuration\AppConfigSK.cs" />
+    <Compile Include="Configuration\AppConfigStrava.cs" />
+    <Compile Include="Constants\StravaConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
