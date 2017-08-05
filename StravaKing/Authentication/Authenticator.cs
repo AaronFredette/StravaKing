@@ -46,8 +46,6 @@ namespace StravaKing.Authentication
 
 		public async Task<bool> OnPageLoaded(Uri uri)
 		{
-
-			Debug.WriteLine("Navigated to redirect url.");
 			var parameters = uri.Query.Remove(0, 1).ParseQueryString(); // query portion of the response
 			await Client.GetUserInfo(parameters);
 

@@ -28,5 +28,12 @@ namespace StravaKing.Controllers
 			await authenticator.OnPageLoaded(Request.Url);
 			return RedirectToAction("Index","Home");
 		}
+
+	    public ActionResult Logout()
+	    {
+			var authenticator = AuthManager.CreateAuthenticator(Request);
+		    authenticator.AccessToken = null;
+			return RedirectToAction("Index", "Home");
+	    }
 	}
 }
