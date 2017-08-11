@@ -1,0 +1,24 @@
+﻿@using SK.Library.Enums
+@model StravaKing.Models.Challenge.ChallengeViewModel
+@{
+    ViewBag.Title = "Create Challenge";
+}
+
+
+
+@if (Model.ChallengeStatus == ChallengeStatus.Proposed)
+{
+    <h3>Challenge has been proposed to @Model.ChallengerEmail</h3>
+}
+else
+{
+    using (Html.BeginForm())
+    {
+
+        <div class="editor-label">
+            @Html.TextBoxFor(model => model.ChallengerEmail, new { placeholder = "Challenger Email" })
+        </div>
+
+        <input type="submit" value="Propose Challenge"/>
+    }
+}

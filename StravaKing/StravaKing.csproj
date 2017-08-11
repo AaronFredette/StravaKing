@@ -122,10 +122,22 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet-theme-android.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet-theme-android.min.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet-theme-ios.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet-theme-ios.min.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\css\ratchet.min.css" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\fonts\ratchicons.svg" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\js\ratchet.js" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\js\ratchet.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\fonts\ratchicons.eot" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\fonts\ratchicons.ttf" />
+    <Content Include="Content\thirdparty\ratchet-2.0.2\dist\fonts\ratchicons.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -138,10 +150,13 @@
     <Compile Include="Authentication\Authenticator.cs" />
     <Compile Include="Authentication\RequestFactory.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
+    <Compile Include="Controllers\ChallengeController.cs" />
+    <Compile Include="Controllers\GlobalController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Challenge\ChallengeViewModel.cs" />
     <Compile Include="Models\Home\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -156,6 +171,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Challenge\CreateChallenge.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -166,6 +183,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Authentication\" />
+    <Folder Include="Views\Global\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SK.Library\SK.Library.csproj">

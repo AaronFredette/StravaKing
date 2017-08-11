@@ -62,6 +62,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,9 +71,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Models\Challenges\ChallengeViewModel.cs" />
+    <Compile Include="Classes\Models\Users\UserViewModel.cs" />
+    <Compile Include="Classes\Session\SessionManager.cs" />
     <Compile Include="Configuration\AppConfigSK.cs" />
     <Compile Include="Configuration\AppConfigStrava.cs" />
     <Compile Include="Constants\StravaConstants.cs" />
+    <Compile Include="Enums\ChallengeStatus.cs" />
+    <Compile Include="Enums\ChallengeType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

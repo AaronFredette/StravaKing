@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using SK.Library;
+using SK.Library.Classes.Models.Users;
+using SK.Library.Classes.Session;
 using SK.Library.Configuration;
 using StravaKing.Authentication;
 using StravaKing.Models.Home;
@@ -36,11 +38,11 @@ namespace StravaKing.Controllers
 			var viewModel = new HomeViewModel();
 			if (authenticator.IsAuthenticated)
 			{
-				
 				var client = new StravaSharp.Client(authenticator);
 				var athlete = await client.Athletes.GetCurrent();
-				viewModel.AthleteName = string.Format("{0} {1}", athlete.FirstName, athlete.LastName);
-				return View(viewModel);
+				SessionManager.UpdateCurrentUser(new UserViewModel(athlete));
+				
+				return View(SessionManager.GetCurrentUser());
 			}
 
 			return View("Login", viewModel);

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using SK.Library.Classes.Session;
 using StravaKing.Authentication;
 namespace StravaKing.Controllers
 {
@@ -33,6 +34,7 @@ namespace StravaKing.Controllers
 	    {
 			var authenticator = AuthManager.CreateAuthenticator(Request);
 		    authenticator.AccessToken = null;
+		    SessionManager.UpdateCurrentUser(null);
 			return RedirectToAction("Index", "Home");
 	    }
 	}
