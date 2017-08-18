@@ -1,24 +1,40 @@
-﻿@using SK.Library.Enums
+﻿@using SK.Library.Classes.Session
+@using SK.Library.Enums
 @model StravaKing.Models.Challenge.ChallengeViewModel
 @{
     ViewBag.Title = "Create Challenge";
+
+    List<SelectListItem> friends = Model.Currentuser.Friends.Select(x => new SelectListItem() {Text = x.AthleteName, Value = x.AthleteEmail}).ToList();
+
 }
 
 
 
-@if (Model.ChallengeStatus == ChallengeStatus.Proposed)
-{
-    <h3>Challenge has been proposed to @Model.ChallengerEmail</h3>
-}
-else
-{
-    using (Html.BeginForm())
+    @if (Model.ChallengeStatus == ChallengeStatus.Proposed)
     {
-
-        <div class="editor-label">
-            @Html.TextBoxFor(model => model.ChallengerEmail, new { placeholder = "Challenger Email" })
-        </div>
-
-        <input type="submit" value="Propose Challenge"/>
+        <h3>Challenge has been proposed to @Model.ChallengeeEmail</h3>
     }
-}
+    else
+    {
+        using (Html.BeginForm())
+        {
+
+            <div class="editor-label">
+                @Html.TextBoxFor(model => model.ChallengerEmail, new {placeholder = Model.Currentuser.AthleteEmail})
+            </div>
+            <div class="editor-label">
+                @Html.DropDownListFor(model => model.ChallengeeEmail, friends, "Select Friend")
+            </div>
+            <div class="editor-label">
+                @Html.TextBoxFor(model => model.StartTime, new {placeholder = "Challenge Start Date"})
+            </div>
+
+            <div class="editor-label">
+                @Html.TextBoxFor(model => model.EndTime, new {placeholder = "Challenge End Date"})
+            </div>
+            <div class="editor-label">
+                @Html.EnumDropDownListFor(model=>model.ChallengeType, "Select Challenge Type")
+            </div>
+            <input type="submit" value="Propose Challenge"/>
+        }
+    }

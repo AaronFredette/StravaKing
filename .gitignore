@@ -2,3 +2,7 @@
 StravaKing/bin/StravaKing.dll
 StravaKing/obj/
 StravaKing/bin/
+SK.Library/obj/
+SK.Library/bin/
+*.dll
+*.pbd

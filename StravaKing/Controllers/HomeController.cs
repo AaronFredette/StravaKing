@@ -40,7 +40,8 @@ namespace StravaKing.Controllers
 			{
 				var client = new StravaSharp.Client(authenticator);
 				var athlete = await client.Athletes.GetCurrent();
-				SessionManager.UpdateCurrentUser(new UserViewModel(athlete));
+				var friends = await client.Athletes.GetFriends(athlete.Id, itemsPerPage: 100);
+				SessionManager.UpdateCurrentUser(new UserViewModel(athlete, friends));
 				
 				return View(SessionManager.GetCurrentUser());
 			}

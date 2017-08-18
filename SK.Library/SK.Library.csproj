@@ -71,6 +71,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Helpers\StravaSharp\StravaSharpClientHelper.cs" />
     <Compile Include="Classes\Models\Challenges\ChallengeViewModel.cs" />
     <Compile Include="Classes\Models\Users\UserViewModel.cs" />
     <Compile Include="Classes\Session\SessionManager.cs" />
