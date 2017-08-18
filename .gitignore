@@ -6,3 +6,4 @@ SK.Library/obj/
 SK.Library/bin/
 *.dll
 *.pbd
+*.cache
