@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using StravaKing.Authentication.Filters;
 using System.Web.Mvc;
 using SK.Library.Enums;
 using StravaKing.Models.Challenge;
 
 namespace StravaKing.Controllers
 {
+	[EnsureSessionFilter]
     public class ChallengeController : Controller
     {
         // GET: Challenge

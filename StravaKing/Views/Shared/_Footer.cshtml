@@ -1,13 +1,11 @@
-﻿@model SK.Library.Classes.Models.Users.UserViewModel
+﻿@using SK.Library.Classes.Session
+@model SK.Library.Classes.Models.Users.UserViewModel
 @{
     ViewBag.Title = "footer";
 }
 <div>
-
-
-
     <nav class="bar bar-tab">
-        <a class="tab-item active" href="#">
+        <a class="tab-item active" href="/">
             <span class="icon icon-home"></span>
             <span class="tab-label">Home</span>
         </a>
@@ -27,5 +25,10 @@
             <span class="icon icon-star-filled"></span>
             <span class="tab-label">Completed</span>
         </a>
+        @if (SessionManager.GetCurrentUser() != null)
+        {
+            <a class="tab-item" href="/Authentication/Logout">Log Out</a>
+        }
+
     </nav>
 </div>

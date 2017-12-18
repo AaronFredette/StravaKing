@@ -17,3 +17,15 @@ D:\Projects\StravaKing\SK.Library\bin\Debug\FubarCoder.RestSharp.Portable.OAuth2
 D:\Projects\StravaKing\SK.Library\bin\Debug\Newtonsoft.Json.xml
 D:\Projects\StravaKing\SK.Library\obj\Debug\SK.Library.dll
 D:\Projects\StravaKing\SK.Library\obj\Debug\SK.Library.pdb
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.Mvc.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.Razor.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.Mvc.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.Razor.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Deployment.xml

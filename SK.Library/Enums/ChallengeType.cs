@@ -8,9 +8,9 @@ namespace SK.Library.Enums
 {
 	public enum ChallengeType
 	{
-		Custom,
-		Distance,
-		SegementTime,
-		AverageSpeed
+		Custom=1,
+		Distance=2,
+		SegementTime=3,
+		AverageSpeed=4
 	}
 }
