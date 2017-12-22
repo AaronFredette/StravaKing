@@ -29,3 +29,5 @@ D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Razor.xml
 D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.xml
 D:\Projects\StravaKing\SK.Library\bin\Debug\Microsoft.Web.Infrastructure.xml
 D:\Projects\StravaKing\SK.Library\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Projects\StravaKing\SK.Library\bin\Debug\SK.Data.dll
+D:\Projects\StravaKing\SK.Library\bin\Debug\SK.Data.pdb

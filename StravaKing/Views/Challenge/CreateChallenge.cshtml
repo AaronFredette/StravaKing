@@ -1,6 +1,6 @@
 ﻿@using SK.Library.Classes.Session
 @using SK.Library.Enums
-@model StravaKing.Models.Challenge.ChallengeViewModel
+@model SK.Library.Classes.Models.Challenges.ChallengeViewModel
 @{
     ViewBag.Title = "Create Challenge";
 
@@ -8,19 +8,21 @@
 
 }
 
-
-
-    @if (Model.ChallengeStatus == ChallengeStatus.Proposed)
+    @if (Model.ChallengeStatus == ChallengeStatus.Proposed && !Model.HasError)
     {
         <h3>Challenge has been proposed to @Model.ChallengeeEmail</h3>
+        <a href="/Challenge/CreateChallenge">Create another challenge</a>
     }
     else
     {
         using (Html.BeginForm())
         {
+            <div class="error">
+                @Model.ErrorMessage
+            </div>
 
             <div class="editor-label">
-                @Html.TextBoxFor(model => model.ChallengerEmail, new {placeholder = Model.Currentuser.AthleteEmail})
+                <label>@Model.ChallengerEmail</label>
             </div>
             <div class="editor-label">
                 @Html.DropDownListFor(model => model.ChallengeeEmail, friends, "Select Friend")

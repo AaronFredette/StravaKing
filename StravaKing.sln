@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaKing", "StravaKing\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Library", "SK.Library\SK.Library.csproj", "{35F9A137-DA34-4CB9-97BE-98428C8C0EC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Data", "SK.Data\SK.Data.csproj", "{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{35F9A137-DA34-4CB9-97BE-98428C8C0EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F9A137-DA34-4CB9-97BE-98428C8C0EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F9A137-DA34-4CB9-97BE-98428C8C0EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

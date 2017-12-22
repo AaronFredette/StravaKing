@@ -72,8 +72,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Helpers\Challenges\ChallengeManager.cs" />
     <Compile Include="Classes\Helpers\StravaSharp\StravaSharpClientHelper.cs" />
-    <Compile Include="Classes\Models\Challenges\ChallengeViewModel.cs" />
+    <Compile Include="Classes\Models\Challenge\ChallengeViewModel.cs" />
     <Compile Include="Classes\Models\Users\UserViewModel.cs" />
     <Compile Include="Classes\Session\SessionManager.cs" />
     <Compile Include="Configuration\AppConfigSK.cs" />
@@ -85,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SK.Data\SK.Data.csproj">
+      <Project>{bd3606bc-56e8-49d4-82b8-54ef1aeab614}</Project>
+      <Name>SK.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

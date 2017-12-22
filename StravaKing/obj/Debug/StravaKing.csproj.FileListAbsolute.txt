@@ -47,3 +47,5 @@ D:\Projects\StravaKing\StravaKing\bin\System.Web.Helpers.xml
 D:\Projects\StravaKing\StravaKing\bin\System.Web.Mvc.xml
 D:\Projects\StravaKing\StravaKing\obj\Debug\StravaKing.dll
 D:\Projects\StravaKing\StravaKing\obj\Debug\StravaKing.pdb
+D:\Projects\StravaKing\StravaKing\bin\SK.Data.dll
+D:\Projects\StravaKing\StravaKing\bin\SK.Data.pdb
