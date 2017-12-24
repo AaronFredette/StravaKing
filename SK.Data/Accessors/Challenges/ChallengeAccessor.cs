@@ -21,22 +21,80 @@ namespace SK.Data.Accessors.Challenges
 			return new List<Challenge>()
 			{
 				new Challenge() {
-					ChallengeeEmail = "atreat@gmail.com",
+					Participants = new List<ChallengeParticipant>() {
+						new ChallengeParticipant()
+						{
+							User = new DataModels.Users.User
+							{
+								Email = "atreat@no.com",
+								Name="Austin Emmonds",
+								ImageUrl = "https://dgalywyr863hv.cloudfront.net/pictures/athletes/10469057/4005334/3/medium.jpg"
+							},
+							Challenge = new Challenge()
+							{
+								
+							}
+						},
+						new ChallengeParticipant()
+						{
+							User= new DataModels.Users.User {
+							Email="afredett@gmail.com",
+							Name = "Aaron Fredette",
+							ImageUrl = "https://dgalywyr863hv.cloudfront.net/pictures/athletes/10469057/4005334/3/medium.jpg"
+							},
+							Challenge = new Challenge()
+							{
+
+							}
+						}
+					},
 					ChallengeType = 2,
 					EndTime = DateTime.Now.AddDays(2),
 					StartTime = DateTime.Now,
 					Wager = "bragging rights",
-					ChallengerEmail = "afredett@gmail.com",
+					Challenger = new DataModels.Users.User()
+					{
+						Email="aaron@test.com"
+					},
 					ChallengeStatus = 3
 
 				},
 					new Challenge() {
-					ChallengeeEmail = "atreat@gmail.com",
+					Participants =  new List<ChallengeParticipant>() {
+						new ChallengeParticipant()
+						{
+							User = new DataModels.Users.User
+							{
+								Email = "atreat@no.com",
+								Name="Austin Emmonds",
+								ImageUrl = "https://dgalywyr863hv.cloudfront.net/pictures/athletes/10469057/4005334/3/medium.jpg"
+							},
+							Challenge = new Challenge()
+							{
+
+							}
+						},
+						new ChallengeParticipant()
+						{
+							User= new DataModels.Users.User {
+							Email="afredett@gmail.com",
+							Name = "Aaron Fredette",
+							ImageUrl = "https://dgalywyr863hv.cloudfront.net/pictures/athletes/10469057/4005334/3/medium.jpg"
+							},
+							Challenge = new Challenge()
+							{
+
+							}
+						}
+					},
 					ChallengeType = 3,
 					EndTime = DateTime.Now.AddDays(2),
 					StartTime = DateTime.Now,
 					Wager = "bragging rights",
-					ChallengerEmail = "afredett@gmail.com",
+					Challenger = new DataModels.Users.User()
+					{
+						Email="aaron@test.com"
+					},
 					ChallengeStatus = 2
 
 				},

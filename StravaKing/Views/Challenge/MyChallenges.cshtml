@@ -5,6 +5,15 @@
 
 @foreach(var challenge in Model)
 {
+    <ul class="table-view">
+        
+        <li class="table-view-cell media">
 
+            @foreach(var opponent in challenge.Opponents)
+            {
+               <img src="@opponent.AthleteImage" alt="@opponent.AthleteName"/> @opponent.AthleteName
+            }
+        </li>
+    </ul>
 }
 

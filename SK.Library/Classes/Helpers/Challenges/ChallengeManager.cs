@@ -30,10 +30,15 @@ namespace SK.Library.Classes.Helpers.Challenges
 			return ChallengeAccess.GetChellengesForUser(currentUser.AthleteEmail).Select(x => new ChallengeViewModel(x));
 		}
 
-		public ChallengeViewModel CreateChallenge(ChallengeViewModel newChallenge)
+		public NewChallengeViewModel CreateChallenge(NewChallengeViewModel newChallenge)
 		{
-
+			//TODO: 
+			// Add another table of emails to sync accounts for
+			// we may need to do this when we sync someones friends 
 			try {
+				var participantIds = new List<long>();
+				participantIds.Add(newChallenge.ChallengeeUserId);
+				participantIds.Add(SessionManager.GetCurrentUser().UserId);
 				if (ChallengeAccess.CreateChallenge(newChallenge.ToChallengeDataModel()))
 				{
 					return newChallenge;

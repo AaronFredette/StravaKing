@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Accessors\Challenges\ChallengeAccessor.cs" />
     <Compile Include="DataModels\Challenges\Challenge.cs" />
+    <Compile Include="DataModels\Challenges\ChallengeParticipant.cs" />
     <Compile Include="DataModels\Users\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

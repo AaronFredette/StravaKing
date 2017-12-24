@@ -74,7 +74,8 @@
   <ItemGroup>
     <Compile Include="Classes\Helpers\Challenges\ChallengeManager.cs" />
     <Compile Include="Classes\Helpers\StravaSharp\StravaSharpClientHelper.cs" />
-    <Compile Include="Classes\Models\Challenge\ChallengeViewModel.cs" />
+    <Compile Include="Classes\Models\Challenges\ChallengeViewModel.cs" />
+    <Compile Include="Classes\Models\Challenges\NewChallengeViewModel.cs" />
     <Compile Include="Classes\Models\Users\UserViewModel.cs" />
     <Compile Include="Classes\Session\SessionManager.cs" />
     <Compile Include="Configuration\AppConfigSK.cs" />

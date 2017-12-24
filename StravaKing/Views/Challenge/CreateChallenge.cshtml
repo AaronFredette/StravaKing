@@ -1,10 +1,10 @@
 ﻿@using SK.Library.Classes.Session
 @using SK.Library.Enums
-@model SK.Library.Classes.Models.Challenges.ChallengeViewModel
+@model SK.Library.Classes.Models.Challenges.NewChallengeViewModel
 @{
     ViewBag.Title = "Create Challenge";
 
-    List<SelectListItem> friends = Model.Currentuser.Friends.Select(x => new SelectListItem() {Text = x.AthleteName, Value = x.AthleteEmail}).ToList();
+    List<SelectListItem> friends = SessionManager.GetCurrentUser().Friends.Select(x => new SelectListItem() {Text = x.AthleteName, Value = x.AthleteEmail}).ToList();
 
 }
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="editor-label">
-                <label>@Model.ChallengerEmail</label>
+                <label>@SessionManager.GetCurrentUser().AthleteEmail</label>
             </div>
             <div class="editor-label">
                 @Html.DropDownListFor(model => model.ChallengeeEmail, friends, "Select Friend")

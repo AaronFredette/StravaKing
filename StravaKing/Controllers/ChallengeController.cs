@@ -15,7 +15,7 @@ namespace StravaKing.Controllers
         // GET: Challenge
         public ActionResult CreateChallenge()
         {
-            return View(new ChallengeViewModel());
+            return View(new NewChallengeViewModel());
         }
 
 		private ChallengeManager _challengeManager;
@@ -31,7 +31,7 @@ namespace StravaKing.Controllers
 			}
 		}
 	    [HttpPost]
-	    public ActionResult CreateChallenge(ChallengeViewModel model)
+	    public ActionResult CreateChallenge(NewChallengeViewModel model)
 	    {
 		    model.ChallengeStatus = ChallengeStatus.Proposed;
 						
