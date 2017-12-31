@@ -17,5 +17,7 @@ namespace SK.Data.DataModels.Challenges
 		public DateTime EndTime { get; set; }
 		public string Wager { get; set; }
 		public int ChallengeStatus { get; set; }
+        public virtual User Victor { get; set; }
+        public string ChallengeObjective { get; set; }
 	}
 }

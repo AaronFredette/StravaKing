@@ -11,6 +11,7 @@ namespace SK.Library.Enums
 		Custom=1,
 		Distance=2,
 		SegementTime=3,
-		AverageSpeed=4
+        AverageSpeed=4,
+        TotalTime=5
 	}
 }

@@ -16,7 +16,7 @@ namespace SK.Data.Accessors.Challenges
 
 
 		#region GetChallenges
-		public List<Challenge> GetChellengesForUser(string email)
+		public List<Challenge> GetChallengesForUser(string email)
 		{
 			return new List<Challenge>()
 			{
