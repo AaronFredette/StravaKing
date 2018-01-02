@@ -148,10 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Authentication\AuthenticationManager.cs" />
-    <Compile Include="Authentication\Authenticator.cs" />
     <Compile Include="Authentication\Filters\EnsureSessionFilter.cs" />
-    <Compile Include="Authentication\RequestFactory.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\ChallengeController.cs" />
     <Compile Include="Controllers\GlobalController.cs" />

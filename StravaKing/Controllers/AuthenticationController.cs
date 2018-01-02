@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using SK.Library.Classes.Session;
-using StravaKing.Authentication;
+using SK.Library.Classes.Helpers.Authentication;
 namespace StravaKing.Controllers
 {
     public class AuthenticationController : Controller

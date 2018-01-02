@@ -73,6 +73,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Helpers\Authentication\AuthenticationManager.cs" />
+    <Compile Include="Classes\Helpers\Authentication\Authenticator.cs" />
+    <Compile Include="Classes\Helpers\Authentication\RequestFactory.cs" />
     <Compile Include="Classes\Helpers\Challenges\ChallengeManager.cs" />
     <Compile Include="Classes\Helpers\StravaSharp\StravaSharpClientHelper.cs" />
     <Compile Include="Classes\Models\Challenges\AthleteSegmentViewModel.cs" />
@@ -96,6 +99,9 @@
       <Project>{bd3606bc-56e8-49d4-82b8-54ef1aeab614}</Project>
       <Name>SK.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clients\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
