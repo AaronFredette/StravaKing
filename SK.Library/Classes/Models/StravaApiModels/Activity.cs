@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SK.Library.Clients
+namespace SK.Library.Classes.Models.StravaApiModels
 {
-    public class ActivityClient
+    public class Activity
     {
     }
 }

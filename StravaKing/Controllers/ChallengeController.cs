@@ -12,7 +12,7 @@ using SK.Library.Classes.Session;
 using SK.Library.Configuration;
 using SK.Library.Classes.Helpers.Authentication;
 using StravaKing.Models.Home;
-using RestSharp.Portable.HttpClient;
+using SK.StravaLibrary;
 
 namespace StravaKing.Controllers
 {
@@ -73,7 +73,7 @@ namespace StravaKing.Controllers
             if (authenticator.IsAuthenticated)
             {
                 //RestClient.
-                var client = new StravaSharp.Client(authenticator);
+                var client = new Client(authenticator);
                 var activities = await client.Activities.GetAthleteActivitiesAfter(DateTime.Now.AddMonths(-4));
                 
                 //var athlete = await client.Segments.Get

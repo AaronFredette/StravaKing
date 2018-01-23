@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -71,10 +72,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="StravaSharp, Version=0.4.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StravaSharp.0.4.6\lib\netstandard1.1\StravaSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
@@ -189,6 +186,10 @@
     <ProjectReference Include="..\SK.Library\SK.Library.csproj">
       <Project>{35f9a137-da34-4cb9-97be-98428c8c0ec4}</Project>
       <Name>SK.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SK.StravaLibrary\SK.StravaLibrary.csproj">
+      <Project>{f0b61db4-5367-476c-906a-0a1101e24d5e}</Project>
+      <Name>SK.StravaLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

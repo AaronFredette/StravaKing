@@ -19,3 +19,6 @@ D:\Projects\StravaKing\SK.Library\obj\Debug\SK.Library.dll
 D:\Projects\StravaKing\SK.Library\obj\Debug\SK.Library.pdb
 D:\Projects\StravaKing\SK.Library\bin\Debug\SK.Data.dll
 D:\Projects\StravaKing\SK.Library\bin\Debug\SK.Data.pdb
+D:\Projects\StravaKing\SK.Library\obj\Debug\SK.Library.csproj.CoreCompileInputs.cache
+D:\Projects\StravaKing\SK.Library\bin\Debug\SK.Library.dll.config
+D:\Projects\StravaKing\SK.Library\bin\Debug\StravaSharp.pdb

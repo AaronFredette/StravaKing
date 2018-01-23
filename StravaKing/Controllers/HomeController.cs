@@ -1,5 +1,5 @@
 ﻿using RestSharp.Portable.OAuth2;
-using StravaSharp;
+using SK.Library;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -10,7 +10,7 @@ using System.Web.Mvc;
 using SK.Library;
 using SK.Library.Classes.Models.Users;
 using SK.Library.Classes.Session;
-using SK.Library.Configuration;
+using SK.StravaLibrary;
 using SK.Library.Classes.Helpers.Authentication;
 using StravaKing.Models.Home;
 
@@ -38,7 +38,7 @@ namespace StravaKing.Controllers
 			var viewModel = new HomeViewModel();
 			if (authenticator.IsAuthenticated)
 			{
-				var client = new StravaSharp.Client(authenticator);
+				var client = new Client(authenticator);
 				var athlete = await client.Athletes.GetCurrent();
 				var friends = await client.Athletes.GetFriends(athlete.Id, itemsPerPage: 100);
                 var activities = await client.Activities.GetAthleteActivities(1);

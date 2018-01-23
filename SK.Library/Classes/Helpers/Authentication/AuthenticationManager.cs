@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Org.BouncyCastle.Asn1.Ocsp;
 using SK.Library.Configuration;
-using StravaSharp;
+using SK.StravaLibrary;
 
 namespace SK.Library.Classes.Helpers.Authentication
 {

@@ -47,3 +47,8 @@ D:\Projects\StravaKing\StravaKing\obj\Debug\StravaKing.dll
 D:\Projects\StravaKing\StravaKing\obj\Debug\StravaKing.pdb
 D:\Projects\StravaKing\StravaKing\bin\SK.Data.dll
 D:\Projects\StravaKing\StravaKing\bin\SK.Data.pdb
+D:\Projects\StravaKing\StravaKing\obj\Debug\StravaKing.csproj.CoreCompileInputs.cache
+D:\Projects\StravaKing\StravaKing\bin\StravaKing.dll.config
+D:\Projects\StravaKing\StravaKing\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\StravaKing\StravaKing\bin\SK.Library.dll.config
+D:\Projects\StravaKing\StravaKing\bin\StravaSharp.pdb

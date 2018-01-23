@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StravaKing", "StravaKing\StravaKing.csproj", "{393CB7A6-D4E7-42C0-B30A-33D8DD938EFA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Library", "SK.Library\SK.Library.csproj", "{35F9A137-DA34-4CB9-97BE-98428C8C0EC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.Data", "SK.Data\SK.Data.csproj", "{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SK.StravaLibrary", "SK.StravaLibrary\SK.StravaLibrary.csproj", "{F0B61DB4-5367-476C-906A-0A1101E24D5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3606BC-56E8-49D4-82B8-54EF1AEAB614}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B61DB4-5367-476C-906A-0A1101E24D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B61DB4-5367-476C-906A-0A1101E24D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B61DB4-5367-476C-906A-0A1101E24D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B61DB4-5367-476C-906A-0A1101E24D5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88E3D4D9-7890-476A-B60F-4E4E96225B18}
 	EndGlobalSection
 EndGlobal

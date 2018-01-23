@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using StravaSharp;
+using SK.StravaLibrary;
 using SK.Data.DataModels.Users;
 
 namespace SK.Library.Classes.Models.Users

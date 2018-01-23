@@ -3,3 +3,4 @@ D:\Projects\StravaKing\SK.Data\bin\Debug\SK.Data.pdb
 D:\Projects\StravaKing\SK.Data\obj\Debug\SK.Data.dll
 D:\Projects\StravaKing\SK.Data\obj\Debug\SK.Data.pdb
 D:\Projects\StravaKing\SK.Data\obj\Debug\SK.Data.csprojResolveAssemblyReference.cache
+D:\Projects\StravaKing\SK.Data\obj\Debug\SK.Data.csproj.CoreCompileInputs.cache

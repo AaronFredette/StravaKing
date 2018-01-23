@@ -7,3 +7,5 @@ SK.Library/bin/
 *.dll
 *.pbd
 *.cache
+SK.StravaClient/obj/*
+SK.StravaLibrary/obj/*
